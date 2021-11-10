@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Assignment 2 </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  	main {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+main > h1, p, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: gray;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+section { 
+  display: block;
+}
+
+
+table, th, td 
+{
+  border: 1px solid black;
+}
+
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+
+
+  </style>
+</head>
+<body>
+	<div class="container">
+	
+<div class="jumbotron">
+	<h1 class="s" style="text-align: center; ">
+		Assignment 2
+	</h1></div>
+<small>put your cursor tip on line</small>
+   <hr title="This is done by hr tag">
+	
+		<ul><li> <b>MAIN and ARTICLE</b></li></ul>
+		
+	<main>
+		<article class="browser">
+		 My Moto
+         <p title="Attempt>Knowledge>Apply"> AKA</p>
+        </article>
+    </main>
+        
+<hr>
+
+<ul><li> <b>NAV</b></li></ul>
+<nav>
+	<p class="b">
+		<a href="https://twitter.com/?lang=en-in">Twittter</a> |
+	              <a href="https://www.youtube.com/">Youtube</a>  |
+	             <a href="https://www.google.com/">Google</a>|
+	         </p>
+	     </nav>
+         
+<hr>
+
+<ul><li> <b>noscript and script</b></li></ul>
+	<p class="c"><script> document.write("Innoovatum")</script>
+<noscript>sorry,no lazziness suported</noscript>
+	</p>
+
+<hr>
+
+<ul><li> <b>Pre text(fixed width)</b></li></ul>
+	<div style="width:200px;overflow:auto">
+<pre>so when u reach to right side u will know u r sliding this to see what i wrote next,..nothing</pre>
+</div>
+
+<hr>
+
+
+	<ul><li> <b> Section</b></li></ul>
+
+	
+		<section class="e">
+			Champions are not Winners,they were the loosers who never gave up.
+		</section>
+	
+<hr>
+
+<ul><li> <b>Table</b></li></ul>
+       
+       	<table>
+       		<tr>
+       			<th>sl.no</th>
+       			<th>games</th>
+       		</tr>
+       		<tr>
+       			<td>1.</td>
+       			<td>Apex Legends</td>
+       		</tr>
+       		<tr>
+       			<td>2.</td>
+       			<td>CS Go</td>
+       		</tr>
+       	</table>
+       
+<hr>
+
+       <ul><li> <b>Video</b></li></ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eZRvKwlNbOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<hr>
+
+
+
+	<ul><li> <b>Canvas</b></li></ul>
+
+	<p class="h">
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Innoovatum",10,50);
+</script>
+	</p>
+
+
+<hr>
+
+
+
+
+<ul><li> <b>Fieldset and Form</b></li></ul>
+<div class="">
+<form action="/action_page.php">
+ <fieldset>
+  <legend>Personal info:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+
+<hr>
+
+	<ul><li> <b>Figcaption</b></li></ul>
+<figure>
+  <img src="download.jpg" alt="nature" style="width:50%">
+  <figcaption>Fig.1 - Tree,Field.</figcaption>
+</figure>
+	
+<hr>
+
+<ul><li> <b>Output element</b></li></ul>
+   <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">
+=<output name="x" for="a b"></output>
+</form>  
+
+<hr>
+
+<ul><li> <b>Form (with check boxes)</b></li></ul>
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Marvel</label><br>
+  <input type="checkbox" name="vehicle2" value="Car">
+  <label for="vehicle2"> DC</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>
+  <label for="vehicle3"> Anime</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<ul><li> <b>Footer</b></li></ul>
+
+<footer>
+  <p>Assignment by: Inzamam Indikar<br>
+  <a href="https://www.facebook.com/inzmam.indikar.7/" target="_blank">My FB</a></p>
+</footer>
+
+<hr style="width:50%">
+</div>
+
+
+</body>
+</html>
